@@ -20,7 +20,7 @@
 
 'use strict';
 
-var tape = require('tape');
+var test = require('tape-catch')
 var WrappingTape = require('wrapping-tape');
 var CoordinatorConnector = require('./CoordinatorConnector');
 var parsedJSON = require('../serveraddress.json');
