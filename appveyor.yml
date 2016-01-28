@@ -1,0 +1,9 @@
+os: Visual Studio 2015
+clone_folder: C:\Thali_CordovaPlugin
+install:
+- appveyor DownloadFile https://jxcore.s3.amazonaws.com/0310/jx_win32sm.zip
+- 7z e jx_win32sm.zip
+- SET PATH=%PATH%;C:\Thali_CordovaPlugin\jx_win32sm
+build_script:
+- '"C:\Program Files\Git\bin\sh.exe" --login -c "./build.sh"'
+test: off

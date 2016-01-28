@@ -3,6 +3,10 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
+echo $PATH
+echo `dirname $0`
+C:/Thali_CordovaPlugin/jx_win32sm/jx.exe -jxv
+
 cd `dirname $0`
 cd ../../test/TestServer
 jx npm install
